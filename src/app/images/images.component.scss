@@ -1,0 +1,29 @@
+.list-of-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-object p{
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2f2f2f;
+    font-size: 0.8em;
+    margin: 0;
+    height: 30px;
+    padding: 2px;
+    margin-top: 10px;
+}
+.img-object {
+    min-height: 300px;
+    width: 300px;
+}
+
+.img-object img {
+    width:100%;
+    aspect-ratio: 1/1;
+}

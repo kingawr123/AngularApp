@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Add new post</h2>
+    <form (submit)="addPost()">
+        <input type="text" [(ngModel)]="post_title" name="post_title" placeholder="Title" />
+        <input type="text" [(ngModel)]="post_body" name="post_body" placeholder="Body" />
+        <input type="submit" value="Submit">
+    </form>
+    <div class="list-of-posts">
+        <div class="post" *ngFor="let post of posts.slice().reverse()">
+            <h2>{{post.title}}</h2>
+            <p>{{post.body}}</p>
+        </div>
+    </div>
+    
+</div>
